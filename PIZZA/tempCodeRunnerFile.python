@@ -1,0 +1,70 @@
+class Product:
+    def __init__(self, name, production_year, product_validity):
+        self.name = name
+        self.production_year = production_year
+        self.product_validity = product_validity
+
+    def is_Expired(self):
+        current_year = 2023  # Assuming the current year is 2023
+        if self.production_year + self.product_validity < current_year:
+            print(f"The product {self.name} is expired.")
+        else:
+            print(f"The product {self.name} is not expired.")
+
+
+class Food(Product):
+    def __init__(self, name, production_year, product_validity, type):
+        super().__init__(name, production_year, product_validity)
+        self.type = type
+
+    def is_Expired(self):
+        current_year = 2023  # Assuming the current year is 2023
+        if self.production_year + self.product_validity < current_year:
+            print(f"The food product {self.name} is expired.")
+        else:
+            print(f"The food product {self.name} is not expired.")
+
+    def details(self):
+        print(f"Name: {self.name}, Type: {self.type}")
+
+
+class Drink(Product):
+    def __init__(self, name, production_year, product_validity, liters):
+        super().__init__(name, production_year, product_validity)
+        self.liters = liters
+
+    def is_Expired(self):
+        current_year = 2023  # Assuming the current year is 2023
+        if self.production_year + self.product_validity < current_year:
+            print(f"The drink {self.name} is expired.")
+        else:
+            print(f"The drink {self.name} is not expired.")
+
+    def details(self):
+        print(f"Name: {self.name}, Liters: {self.liters}")
+
+
+class Shop:
+    def __init__(self):
+        self.products = []
+
+    def add_product(self, product):
+        self.products.append(product)
+
+    def is_Expired_for_all(self):
+        for product in self.products:
+            product.is_Expired()
+
+
+# Create instances and demonstrate usage
+product1 = Product("Product 1", 2019, 3)
+product4 = Drink("Drink 1", 2022, 2, 1.5)
+
+shop = Shop()
+shop.add_product(product1)
+shop.add_product(product4)
+
+shop.is_Expired_for_all()
+
+
+product4.details()
