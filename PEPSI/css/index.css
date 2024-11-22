@@ -1,0 +1,314 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   background-color: rgb(15, 2, 135);
+}
+
+body {
+    
+    margin-top: 8vh;
+    
+}
+ 
+.loog {
+    display: flex;
+    width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;  
+    font-size: 15px; 
+    color: rgba(15, 2, 135, 0);  
+   
+}
+.loog ul {
+display: flex;
+margin-right: 30px;
+margin-top: 40px;
+}
+
+.loog ul a {
+   margin-right: 45px; 
+   color:#fff;
+   text-decoration: none;
+}
+
+a:hover {
+    background: linear-gradient(45deg, #ffa600,#ffa600, #ffa600);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+}
+
+.loog img {
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-radius: 90%;
+    box-shadow: 2px 2px 2px #000;
+   
+}
+#container {
+     width:1300px;
+     height: 100vh;
+     margin: auto;
+     height:85vh ;
+   
+   
+}
+
+
+
+
+
+.home {
+    display: flex;
+   
+}
+
+.linkstr {
+    margin-left:50px ;
+    margin-top: 120px;
+    background-size: 100px;
+    
+} 
+
+
+.linkstr a {
+    
+    border-radius: 50%;
+    border:px solid;
+    color: blue;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    margin-top: 16px;
+    box-shadow: 2px 1px 1px #000 , -2px -1px -1px #000;
+    font-size: 35px;
+    
+}
+
+.linkstr a:hover {
+     background-color: transparent;
+     border: 1px solid #ffa600;
+}
+
+.material-symbols-outlined {
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    padding:auto;
+    
+}
+
+
+.textt  {
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 115px;
+    color: #fff;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+ 
+
+.textt .oo {
+    font-size: 120px;
+    margin-right: 10px;
+    text-shadow: 1px px 1px #000;
+    margin-bottom: 10px;
+
+
+
+}
+
+.imagee img {
+    width: 480px;
+    margin-left: 100px;
+    margin-right: 0px; 
+    border-radius: 50%;   
+    border:2px;
+
+}
+
+.linkend {
+    margin-top: 120px;
+    margin-left: 100ps;
+
+}
+
+.linkend a{
+    background-color:rgba(22, 22, 222, 0) ;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    margin-top: 13px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+   
+    
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+    
+   
+    .loog {
+        display: block;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    .loog ul {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .loog img {
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .container {
+        display: block;
+        height: 1200;
+    }
+
+    .home {
+        display: block;
+
+    }
+
+    .linkstr {
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .linkstr a {
+        font-size: 50px;
+        margin: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .textt {
+        text-align: center;
+        
+    }
+    .textt .oo {
+        margin-bottom: 25px;
+    }
+
+    .imagee {
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .linkend{
+        text-align: center;
+        justify-content: center;
+        margin-left: 75px;
+
+    }
+    .linkend a {
+        margin: 40px;
+    }
+
+    
+}
+@media screen and (max-width:450){
+        
+    .loog {
+        display: block;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    .loog ul {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .loog ul a {
+        font-size: 60px;
+    }
+
+    .loog img {
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        
+    }
+
+    .container {
+        display: block;
+       
+    }
+
+    .home {
+        display: block;
+        margin-top: 70px;
+    }
+
+    .linkstr {
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .linkstr a {
+        font-size: 50px;
+        margin: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .textt {
+        text-align: center;
+    
+        
+    }
+    .textt .oo {
+        margin-bottom: 25px;
+    }
+
+    .imagee {
+        text-align: center;
+       
+    }
+
+    .linkend{
+        text-align: center;
+        justify-content: center;
+        margin-left: 75px;
+
+    }
+    .linkend a {
+        margin: 40px;
+    }
+
+}
