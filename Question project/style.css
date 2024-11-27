@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--background:#eff6FF;
+--dark-blue:#3b82f6;
+--dark-gray:#111827;
+--light-blue:#dbeafe;
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+    background-color:#eff6FF;
+}
+
+/*big box websit*/
+#questions {
+ min-height:100vh;
+ display: flex;
+ justify-content: center ; /**/
+ align-items:center;/* */
+ flex-direction:column;/*يتم ترتيب العناصر عموديًا من الأعلى إلى الأسفل*/
+ max-width: 800px; /* اقصي عرض*/
+ margin:auto;  /*عشان يخليه في الوسط*/
+
+}
+
+/* box contaion*/
+#questions .accordion {
+    background-color: #ffff;
+    padding: 2rem;
+    border-radius :5px; 
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    width: 100%;
+} 
+
+/*Questions  header*/
+#questions .accordion h1 {
+    font-size:50px;
+    color:var(--dark-blue);
+    font-weight: 400;
+    text-align:center;
+
+}
+#questions .accordion .accordion-item {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    margin: 30px 0px;
+
+}
+
+
+#questions .accordion .accordion-item .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+}
+
+/* how do i get ...*/
+#questions .accordion .accordion-item .accordion-header h2 {
+    font-size:22px ;
+    font-weight:400 ;
+    color:var(--dark-blue);
+
+}
+/*botton*/
+#questions .accordion .accordion-item .accordion-header .btn{
+    border: none;
+    background-color: var(--dark-blue);
+    color:#ffff;
+    width: 25px ;
+    height: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+#questions .accordion .accordion-item .accordion-content {
+    display: none;
+    padding:15px 20px ;
+    background-color: var(--light-blue);
+    line-height: 1.6; /*المسافة بين كل برجراف */
+    font-size: 16p;
+    color: var(--dark-gray);
+} 
+#questions .accordion .accordion-item .accordion-content.active {
+    display: block;
+}
